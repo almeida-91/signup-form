@@ -34,11 +34,11 @@
                     <label for="email">EMAIL</label>
                     <input type="email" id="email" name="email" required>
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]*" required>
                 </p>
                 <p>
                     <label for="password">PASSWORD</label>
-                    <input class="error" type="password" id="password" name="password" required>
+                    <input class="error" type="password" id="password" name="password" onfocusout="checkpw()" required>
                     <label for="confirmpw">CONFIRM PASSWORD</label>
                     <input class="error" type="password" id="confirmpw" name="confirmpw" onfocusout="checkpw()" required>
                 </p>
