@@ -24,27 +24,27 @@
             <div class="formcontainer">
                 <legend>Let's do this!</legend>
 
-                <p>
+                <p class="formrow">
                     <label for="firstname">FIRST NAME</label>
                     <label for="lastname">LAST NAME</label>
                 </p>
-                <p>
+                <p class="formrow">
                     <input type="text" id="firstname" name="firstname" required>
                     <input type="text" id="lastname" name="lastname" required>
                 </p>
-                <p>
+                <p class="formrow">
                     <label for="email">EMAIL</label>
                     <label for="phone">PHONE NUMBER</label>
                 </p>
-                <p>
+                <p class="formrow">
                     <input type="email" id="email" name="email" required>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]*" required>
                 </p>
-                <p>
+                <p class="formrow">
                     <label for="password">PASSWORD</label>
                     <label for="confirmpw">CONFIRM PASSWORD</label>
                 </p>
-                <p>
+                <p class="formrow">
                     <input class="error" type="password" id="password" name="password" onfocusout="checkpw()" required>
                     <input class="error" type="password" id="confirmpw" name="confirmpw" onfocusout="checkpw()" required>
                 </p>
@@ -52,7 +52,7 @@
             </div>
             <button type="submit">Create Account</button>
         </form>
-        <p style="font-size: large; font-weight:700; margin:3em; ">Already have an account? <a class="login" href="#">Log In</a></p>
+        <p style="font-size: large; font-weight:700; margin:3em; display: block;" >Already have an account? <a class="login" href="#">Log In</a></p>
     </div>
 </body>
 </html>

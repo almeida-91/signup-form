@@ -23,7 +23,6 @@ body {
     color: white;
     text-align: center;
     flex-shrink: 0;
-    /*background-attachment: local;*/
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -33,7 +32,6 @@ body {
 a {
     appearance: none;
     color: white;
-    text-decoration: none;
     margin-right: 0.5em;
     margin-left: 0.5em;
     text-decoration: underline;
@@ -82,25 +80,22 @@ legend {
 }
 
 label {
-/*     margin-right: 5em; */
-    position: relative;
-    width: 11em;
-    display: table-cell;
-/*     left: -0.6em; */
+    margin-left: 3em;
+    margin-right: 5em; 
+    width: 11.7em;
     font-size: 1em;
     font-weight: 700;
     justify-self: flex-start;
 }
 
 input {
+    margin-left: 3em;
     display: table-cell;
     position: relative;
     height: 2em;
     width: 15em;
     border-radius: 3px;
-/*     margin-right: 5em; */
-/*     top: 2em;
-    left: -10em; */
+    margin-right: 5em;
     border: 2px solid #E5E7EB;
     background-color: black;
     color: white;
@@ -109,15 +104,19 @@ input {
 p {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     margin: .5em ;
 }
 
-p .login {
+.formrow {
+    max-width: 70%;
+}
+
+.login {
     color: rgb(13, 127, 228);
     font-weight: 1000;
     font-size: large;
-
+    text-decoration: none;
 }
 
 .formdiv {
@@ -153,8 +152,9 @@ input:valid {
 }
 
 span {
-    margin-left: 3em;
     font-size: 1em;
     font-weight: 700;
     color: red;
+    max-width: 70%;
+    align-self: center;
 }
