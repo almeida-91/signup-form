@@ -11,7 +11,7 @@
 <body>
     <div class="header">
         <div class="logo"><img src="./images/odin-lined.png">FAKE</div>
-        <p style="position: absolute; bottom:3px; left: 2px;">Photo by <a href="https://unsplash.com/@hellocolor">Pawel Nolbert</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        <p style="align-self:center; bottom:200px; left: 2px; font-weight: 700;background-color: rgba(0, 0, 0, 0.5);">Photo by <a href="https://unsplash.com/@hellocolor">Pawel Nolbert</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
     <div class="formdiv">
         <h2> This is not a real online service! You know you need 
@@ -26,22 +26,23 @@
 
                 <p>
                     <label for="firstname">FIRST NAME</label>
-                    <input type="text" id="firstname" name="firstname">
+                    <input type="text" id="firstname" name="firstname" required>
                     <label for="lastname">LAST NAME</label>
-                    <input type="text" id="lastname" name="lastname">
+                    <input type="text" id="lastname" name="lastname" required>
                 </p>
                 <p>
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" required>
                 </p>
                 <p>
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                    <input class="error" type="password" id="password" name="password" required>
                     <label for="confirmpw">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmpw" name="confirmpw">
+                    <input class="error" type="password" id="confirmpw" name="confirmpw" onfocusout="checkpw()" required>
                 </p>
+                <span id="errortext"></span>
             </div>
             <button type="submit">Create Account</button>
         </form>
