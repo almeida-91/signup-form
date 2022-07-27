@@ -82,23 +82,25 @@ legend {
 }
 
 label {
+/*     margin-right: 5em; */
     position: relative;
     width: 11em;
     display: table-cell;
-    margin-bottom: 1em;
-    left: 3em;
+/*     left: -0.6em; */
     font-size: 1em;
     font-weight: 700;
+    justify-self: flex-start;
 }
 
-label + input {
+input {
     display: table-cell;
     position: relative;
     height: 2em;
-    width: 20em;
+    width: 15em;
     border-radius: 3px;
-    top: 2em;
-    left: -10em;
+/*     margin-right: 5em; */
+/*     top: 2em;
+    left: -10em; */
     border: 2px solid #E5E7EB;
     background-color: black;
     color: white;
@@ -107,16 +109,19 @@ label + input {
 p {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin: .5em ;
 }
 
-.login {
-    margin-left: 1em;
+p .login {
     color: rgb(13, 127, 228);
     font-weight: 1000;
     font-size: large;
+
 }
 
 .formdiv {
+    padding-top: 5em;
     background-color: black;
     color: white;
     height: 100%;
@@ -147,11 +152,8 @@ input:valid {
     border: 2px solid rgb(16, 223, 16);
 }
 
-input:invalid {
-}
-
 span {
-    margin: 3em;
+    margin-left: 3em;
     font-size: 1em;
     font-weight: 700;
     color: red;
